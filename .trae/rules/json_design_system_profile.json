@@ -1,0 +1,379 @@
+{
+  "designSystem": {
+    "name": "Trashly Inspired Design System",
+    "description": "A design system based on the visual cues from the 'Trashly' website screenshots, focusing on clean layouts, a specific color palette, and consistent typography and component styling.",
+    "style": {
+      "overallAesthetic": "Modern, clean, professional, and trustworthy, with a subtle industrial/eco-friendly undertone. Emphasizes clarity and readability.",
+      "colorPalette": {
+        "primaryBrand": "#FF7F00",
+        "secondaryAccent": "#4CAF50",
+        "darkBackground": "#1A202C",
+        "textDark": "#FFFFFF",
+        "textLight": "#333333",
+        "neutralBackground": "#F8F8F8",
+        "borderPrimary": "#E0E0E0",
+        "link": "#007BFF",
+        "hover": "#FF9933"
+      },
+      "typography": {
+        "fontFamily": "'Inter', 'Helvetica Neue', Arial, sans-serif",
+        "headings": {
+          "h1": {
+            "fontSize": "3rem",
+            "fontWeight": "700",
+            "lineHeight": "1.2",
+            "color": "textLight"
+          },
+          "h2": {
+            "fontSize": "2.5rem",
+            "fontWeight": "700",
+            "lineHeight": "1.3",
+            "color": "textLight"
+          },
+          "h3": {
+            "fontSize": "2rem",
+            "fontWeight": "600",
+            "lineHeight": "1.4",
+            "color": "textLight"
+          },
+          "h4": {
+            "fontSize": "1.5rem",
+            "fontWeight": "600",
+            "lineHeight": "1.5",
+            "color": "textLight"
+          },
+          "sectionHeader": {
+            "fontSize": "0.9rem",
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.1em",
+            "color": "primaryBrand"
+          }
+        },
+        "bodyText": {
+          "fontSize": "1rem",
+          "lineHeight": "1.6",
+          "color": "textLight"
+        },
+        "linkText": {
+          "color": "link",
+          "textDecoration": "none",
+          "hoverEffect": {
+            "color": "hover",
+            "textDecoration": "underline"
+          }
+        },
+        "captionText": {
+          "fontSize": "0.8rem",
+          "color": "#666666"
+        }
+      },
+      "spacing": {
+        "unit": "8px",
+        "padding": {
+          "small": "8px",
+          "medium": "16px",
+          "large": "24px",
+          "section": "60px 0"
+        },
+        "margin": {
+          "small": "8px",
+          "medium": "16px",
+          "large": "24px"
+        },
+        "gap": {
+          "small": "16px",
+          "medium": "24px",
+          "large": "32px"
+        }
+      },
+      "borders": {
+        "radius": "8px",
+        "width": "1px",
+        "color": "borderPrimary"
+      },
+      "shadows": {
+        "card": "0 4px 6px rgba(0, 0, 0, 0.1)",
+        "button": "0 2px 4px rgba(0, 0, 0, 0.2)"
+      }
+    },
+    "components": {
+      "buttons": [
+        {
+          "name": "Primary Button",
+          "style": {
+            "backgroundColor": "primaryBrand",
+            "color": "textDark",
+            "padding": "12px 24px",
+            "borderRadius": "4px",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "hoverEffect": {
+              "backgroundColor": "hover",
+              "transform": "translateY(-2px)"
+            },
+            "transition": "all 0.3s ease"
+          },
+          "iconPlacement": "left"
+        },
+        {
+          "name": "Secondary Button (Outline)",
+          "style": {
+            "backgroundColor": "transparent",
+            "border": "1px solid primaryBrand",
+            "color": "primaryBrand",
+            "padding": "12px 24px",
+            "borderRadius": "4px",
+            "fontWeight": "600",
+            "textTransform": "uppercase",
+            "letterSpacing": "0.05em",
+            "hoverEffect": {
+              "backgroundColor": "primaryBrand",
+              "color": "textDark"
+            },
+            "transition": "all 0.3s ease"
+          },
+          "iconPlacement": "left"
+        }
+      ],
+      "navigation": {
+        "header": {
+          "backgroundColor": "darkBackground",
+          "height": "80px",
+          "logoPlacement": "left",
+          "navLinks": {
+            "color": "textDark",
+            "fontWeight": "500",
+            "hoverEffect": {
+              "color": "primaryBrand"
+            },
+            "activeState": {
+              "color": "primaryBrand",
+              "borderBottom": "2px solid primaryBrand"
+            }
+          },
+          "contactInfo": {
+            "color": "textDark",
+            "fontSize": "0.9rem"
+          },
+          "utilityButtons": {
+            "backgroundColor": "primaryBrand",
+            "color": "textDark",
+            "borderRadius": "4px"
+          }
+        },
+        "footer": {
+          "backgroundColor": "darkBackground",
+          "padding": "60px",
+          "color": "textDark",
+          "linkStyle": {
+            "color": "textDark",
+            "hoverEffect": {
+              "color": "primaryBrand"
+            }
+          },
+          "socialIcons": {
+            "color": "textDark",
+            "size": "24px",
+            "hoverEffect": {
+              "color": "primaryBrand"
+            }
+          },
+          "copyrightText": {
+            "fontSize": "0.8rem",
+            "color": "#BBBBBB"
+          }
+        }
+      },
+      "cards": [
+        {
+          "name": "Service/Feature Card",
+          "layout": "vertical",
+          "style": {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "8px",
+            "boxShadow": "card",
+            "padding": "24px",
+            "iconSize": "60px",
+            "iconColor": "primaryBrand",
+            "titleStyle": {
+              "fontSize": "1.25rem",
+              "fontWeight": "600",
+              "color": "textLight"
+            },
+            "descriptionStyle": {
+              "fontSize": "0.9rem",
+              "color": "#666666"
+            },
+            "readMoreLink": {
+              "color": "link",
+              "fontWeight": "600"
+            }
+          }
+        },
+        {
+          "name": "Testimonial Card",
+          "layout": "vertical",
+          "style": {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "8px",
+            "boxShadow": "card",
+            "padding": "24px",
+            "quoteIcon": {
+              "position": "top-right",
+              "color": "primaryBrand",
+              "size": "30px"
+            },
+            "quoteTextStyle": {
+              "fontSize": "1rem",
+              "fontStyle": "italic",
+              "color": "textLight"
+            },
+            "authorName": {
+              "fontSize": "1.1rem",
+              "fontWeight": "bold",
+              "color": "textLight"
+            },
+            "authorTitle": {
+              "fontSize": "0.9rem",
+              "color": "#666666"
+            }
+          }
+        },
+        {
+          "name": "Image Overlay Card",
+          "layout": "image-top-text-overlay",
+          "style": {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "8px",
+            "overflow": "hidden",
+            "boxShadow": "card",
+            "imageRatio": "16:9",
+            "overlayArea": {
+              "position": "bottom",
+              "backgroundColor": "rgba(0, 0, 0, 0.7)",
+              "padding": "16px",
+              "color": "textDark"
+            },
+            "titleStyle": {
+              "fontSize": "1.1rem",
+              "fontWeight": "600",
+              "color": "textDark"
+            },
+            "tagStyle": {
+              "backgroundColor": "primaryBrand",
+              "color": "textDark",
+              "padding": "4px 8px",
+              "borderRadius": "4px",
+              "fontSize": "0.75rem",
+              "fontWeight": "bold",
+              "position": "top-left"
+            }
+          }
+        }
+      ],
+      "forms": {
+        "inputField": {
+          "backgroundColor": "#FFFFFF",
+          "border": "1px solid borderPrimary",
+          "borderRadius": "4px",
+          "padding": "12px 16px",
+          "fontSize": "1rem",
+          "color": "textLight",
+          "placeholderColor": "#AAAAAA",
+          "focusEffect": {
+            "borderColor": "primaryBrand",
+            "boxShadow": "0 0 0 2px rgba(255, 127, 0, 0.2)"
+          }
+        }
+      },
+      "layoutSections": [
+        {
+          "name": "Hero Section",
+          "structure": "left-aligned-text-overlay-on-image-background",
+          "contentAlignment": "left",
+          "textAlignment": "left",
+          "ctaAlignment": "left",
+          "padding": "large",
+          "textColor": "textDark"
+        },
+        {
+          "name": "Content Block with Image",
+          "structure": "two-column-text-left-image-right (or vice-versa)",
+          "gap": "large",
+          "padding": "section"
+        },
+        {
+          "name": "Grid Section (3 columns)",
+          "structure": "responsive-grid",
+          "columns": {
+            "desktop": 3,
+            "tablet": 2,
+            "mobile": 1
+          },
+          "gap": "medium",
+          "padding": "section"
+        },
+        {
+          "name": "Statistic/Metric Display",
+          "structure": "two-column-statistics-with-icons-and-text",
+          "padding": "medium",
+          "iconSize": "50px",
+          "statisticValue": {
+            "fontSize": "2.5rem",
+            "fontWeight": "bold",
+            "color": "textLight"
+          },
+          "statisticLabel": {
+            "fontSize": "1rem",
+            "color": "#666666"
+          }
+        },
+        {
+          "name": "Progress Bar Section",
+          "structure": "image-left-text-and-progress-bars-right",
+          "padding": "section",
+          "progressBar": {
+            "height": "8px",
+            "backgroundColor": "#E0E0E0",
+            "fillColor": "primaryBrand",
+            "borderRadius": "4px",
+            "labelStyle": {
+              "fontSize": "1rem",
+              "fontWeight": "500",
+              "color": "textLight"
+            },
+            "percentageStyle": {
+              "fontSize": "1rem",
+              "fontWeight": "500",
+              "color": "textLight"
+            }
+          }
+        }
+      ]
+    },
+    "icons": {
+      "style": "outline/line icons",
+      "color": "primaryBrand",
+      "size": "24px"
+    },
+    "animationsAndTransitions": {
+      "buttonHover": "all 0.3s ease",
+      "cardHover": "transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out",
+      "fadeIn": "opacity 0.5s ease-in"
+    },
+    "responsiveness": {
+      "breakpoints": {
+        "small": "640px",
+        "medium": "768px",
+        "large": "1024px"
+      },
+      "layoutAdaptation": "Fluid layouts, column stacking on smaller screens, dynamic font sizing."
+    },
+    "accessibility": {
+      "colorContrastRatio": "WCAG AA compliant for text and interactive elements.",
+      "focusStates": "Clearly visible focus indicators for interactive elements."
+    }
+  }
+}

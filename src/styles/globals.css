@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+:root {
+  --primaryBrand: #FF7F00;
+  --secondaryAccent: #4CAF50;
+  --darkBackground: #1A202C;
+  --textDark: #FFFFFF;
+  --textLight: #333333;
+  --neutralBackground: #F8F8F8;
+  --borderPrimary: #E0E0E0;
+  --link: #007BFF;
+  --hover: #FF9933;
+  --pure-white: #FFFFFF;
+  --off-white: #F8F8F8;
+}
+
+body {
+  color: var(--textLight);
+  background-color: var(--pure-white);
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primaryBrand text-textDark px-6 py-3 rounded-md font-semibold uppercase tracking-wider hover:bg-hover transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-primaryBrand text-primaryBrand px-6 py-3 rounded-md font-semibold uppercase tracking-wider hover:bg-primaryBrand hover:text-textDark transition-all duration-300;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold text-textLight mb-4;
+  }
+
+  .section-description {
+    @apply text-lg text-textLight max-w-2xl mx-auto;
+  }
+  
+  .section-header {
+    @apply text-sm font-bold uppercase tracking-wider text-primaryBrand mb-2;
+  }
+}
