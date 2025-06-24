@@ -1,106 +1,104 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+'use client';
 
-const Services = () => {
+import Link from 'next/link';
+
+export default function Services() {
   return (
     <section className="py-16 bg-neutralBackground">
       <div className="container-custom">
         <div className="text-center mb-12">
           <div className="section-header">Our Services</div>
-          <h2 className="section-title">Choose Your Waste Solution</h2>
+          <h2 className="section-title">Rubbish Removal Solutions</h2>
           <p className="section-description">
-            We offer two convenient options to handle your waste removal needs in Sydney.
+            We offer comprehensive waste removal services across Sydney for all your needs.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* Tipper Trailer Hire Card */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Residential Rubbish Removal */}
           <div className="bg-pure-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-            <div className="relative h-64">
-              <Image
-                src="/1300rubbish/2025-06-05_18-24-44.jpg"
-                alt="Tipper Trailer Hire"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute top-4 left-4 bg-primaryBrand text-textDark px-3 py-1 rounded-md text-sm font-bold uppercase tracking-wider">
-                Self-Load Option
-              </div>
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-textLight mb-3">Tipper Trailer Hire</h3>
-              <p className="text-textLight mb-6">
-                We deliver a tipper trailer to your location, you load it at your own pace, and we collect it when you're done. Perfect for DIY projects and home cleanouts.
+            <div 
+              className="h-52 bg-cover bg-center relative" 
+              style={{
+                backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/residential-waste.svg")'
+              }}
+            ></div>
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-bold text-primaryBrand mb-4">Residential Rubbish Removal</h3>
+              <p className="text-textLight mb-6 text-sm leading-relaxed">
+                From Houses to Apartments – nothing is too much trouble. We remove your unwanted junk, rubbish, furniture & even fittings and carpet from where you tell us to.
               </p>
-              <div className="flex flex-col space-y-3 mb-6">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-primaryBrand mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm">Load at your own pace</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-primaryBrand mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm">No labor costs</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-primaryBrand mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm">Convenient scheduling</span>
-                </div>
-              </div>
-              <Link href="/quote" className="btn-primary inline-block w-full text-center">
-                Book a Trailer
+              <Link 
+                href="/services/residential" 
+                className="bg-primaryBrand text-textDark py-3 px-6 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-hover transition-colors duration-300 inline-block"
+              >
+                RESIDENTIAL
               </Link>
             </div>
           </div>
 
-          {/* Full-Service Rubbish Removal Card */}
+          {/* Commercial Rubbish Removal */}
           <div className="bg-pure-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-            <div className="relative h-64">
-              <Image
-                src="/1300rubbish/2025-06-05_18-26-35.jpg"
-                alt="Full-Service Rubbish Removal"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute top-4 left-4 bg-secondaryAccent text-textDark px-3 py-1 rounded-md text-sm font-bold uppercase tracking-wider">
-                Full-Service Option
-              </div>
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-bold text-textLight mb-3">Full-Service Rubbish Removal</h3>
-              <p className="text-textLight mb-6">
-                Our professional team comes to your location, loads all your rubbish, and takes it away for proper disposal. We handle all the heavy lifting for you.
+            <div 
+              className="h-52 bg-cover bg-center relative" 
+              style={{
+                backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/commercial-waste.svg")'
+              }}
+            ></div>
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-bold text-primaryBrand mb-4">Commercial Rubbish Removal</h3>
+              <p className="text-textLight mb-6 text-sm leading-relaxed">
+                Be it Offices, Warehouses or Retail – we have you covered. We'll remove anything, from obsolete stock, IT or furniture and cubicles or carpet from where you tell us to.
               </p>
-              <div className="flex flex-col space-y-3 mb-6">
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-primaryBrand mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm">No physical effort required</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-primaryBrand mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm">Fast and efficient service</span>
-                </div>
-                <div className="flex items-center">
-                  <svg className="w-5 h-5 text-primaryBrand mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-sm">Responsible waste disposal</span>
-                </div>
-              </div>
-              <Link href="/quote" className="btn-primary inline-block w-full text-center">
-                Request Pickup
+              <Link 
+                href="/services/commercial" 
+                className="bg-primaryBrand text-textDark py-3 px-6 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-hover transition-colors duration-300 inline-block"
+              >
+                COMMERCIAL
+              </Link>
+            </div>
+          </div>
+
+          {/* Construction Rubbish Removal */}
+          <div className="bg-pure-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div 
+              className="h-52 bg-cover bg-center relative" 
+              style={{
+                backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/construction-waste.svg")'
+              }}
+            ></div>
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-bold text-primaryBrand mb-4">Construction Rubbish Removal</h3>
+              <p className="text-textLight mb-6 text-sm leading-relaxed">
+                Reliable and Fast, we clean out any building or demolition site of rubbish and waste or even strip out fixtures and carpet – for a safer and more productive work site.
+              </p>
+              <Link 
+                href="/services/construction" 
+                className="bg-primaryBrand text-textDark py-3 px-6 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-hover transition-colors duration-300 inline-block"
+              >
+                CONSTRUCTION
+              </Link>
+            </div>
+          </div>
+
+          {/* Clean Ups */}
+          <div className="bg-pure-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div 
+              className="h-52 bg-cover bg-center relative" 
+              style={{
+                backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/cleanup-waste.svg")'
+              }}
+            ></div>
+            <div className="p-6 text-center">
+              <h3 className="text-xl font-bold text-primaryBrand mb-4">Clean Ups</h3>
+              <p className="text-textLight mb-6 text-sm leading-relaxed">
+                Our services include clean ups for the NDIS network, deceased estates, hoarders, spring cleans through to tenants dumped rubbish. We are here to get things cleaned up for you.
+              </p>
+              <Link 
+                href="/services/cleanups" 
+                className="bg-primaryBrand text-textDark py-3 px-6 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-hover transition-colors duration-300 inline-block"
+              >
+                CLEAN UPS
               </Link>
             </div>
           </div>
@@ -108,6 +106,4 @@ const Services = () => {
       </div>
     </section>
   );
-};
-
-export default Services;
+}

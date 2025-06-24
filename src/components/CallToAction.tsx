@@ -1,9 +1,11 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 
 export default function CallToAction() {
   return (
-    <section className="py-16 bg-primary-green relative overflow-hidden">
+    <section className="py-16 bg-primaryBrand relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -13,17 +15,17 @@ export default function CallToAction() {
       
       <div className="container-custom relative z-10">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-pure-white mb-6">
-            Ready to Clear Your Space?
-          </h2>
-          <p className="text-xl text-pure-white/90 mb-8 max-w-2xl mx-auto">
-            Need a tipper trailer or rubbish removal service? Give Fair Dinkum Rubbish Removal a call today and we'll help you find the perfect solution for your project. We're here to answer any questions and make the rental process quick and easy.
-          </p>
+          <div className="section-header text-white">
+            <h2 className="section-title text-white">Ready to Clear Your Space?</h2>
+            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Need a tipper trailer or rubbish removal service? Give Fair Dinkum Rubbish Removal a call today and we'll help you find the perfect solution for your project. We're here to answer any questions and make the rental process quick and easy.
+            </p>
+          </div>
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a 
               href="tel:+61123456789" 
-              className="bg-pure-white text-primary-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-off-white transition-colors flex items-center gap-2 min-w-[200px] justify-center"
+              className="bg-white text-primaryBrand px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors flex items-center gap-2 min-w-[200px] justify-center"
             >
               <svg
                 className="w-6 h-6"
@@ -43,7 +45,7 @@ export default function CallToAction() {
             
             <Link
               href="/quote"
-              className="bg-pure-white/10 text-pure-white border-2 border-pure-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-pure-white/20 transition-colors flex items-center gap-2 min-w-[200px] justify-center"
+              className="bg-white/10 text-white border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/20 transition-colors flex items-center gap-2 min-w-[200px] justify-center"
             >
               <svg
                 className="w-6 h-6"

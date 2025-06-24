@@ -31,24 +31,24 @@ export default function ServicesPage() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-charcoal mb-4">Comprehensive Rubbish Removal Solutions</h2>
             <p className="text-lg text-charcoal max-w-3xl mx-auto">
-              At The Southern Cross Clear, we provide a wide range of rubbish removal services tailored to meet the unique needs of our residential and commercial clients across Sydney.
+              At Fair Dinkum Rubbish Removal, we provide a wide range of rubbish removal services tailored to meet the unique needs of our residential and commercial clients across Sydney.
             </p>
           </div>
 
-          {/* Residential Service */}
-          <div id="residential" className="grid md:grid-cols-2 gap-8 items-center mb-20">
+          {/* Self-Load Tipper Trailer Rental */}
+          <div id="self-load" className="grid md:grid-cols-2 gap-8 items-center mb-20">
             <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
               <Image
                 src="/1300rubbish/2025-06-05_18-24-44.jpg"
-                alt="Residential Rubbish Removal"
+                alt="Self-Load Tipper Trailer Rental"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-charcoal mb-4">Residential Rubbish Removal</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Self-Load Tipper Trailer Rental</h3>
               <p className="text-charcoal mb-6">
-                Our residential rubbish removal service is designed to make your life easier. Whether you're decluttering, renovating, or simply need to dispose of unwanted items, our team will handle it all with efficiency and care.
+                Our self-load tipper trailer rental service is designed to make your life easier. Whether you're decluttering, renovating, or simply need to dispose of unwanted items, our team will handle it all with efficiency and care.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
@@ -88,20 +88,20 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Commercial Service */}
-          <div id="commercial" className="grid md:grid-cols-2 gap-8 items-center mb-20">
+          {/* Full-Service Hands-On Rubbish Removal */}
+          <div id="full-service" className="grid md:grid-cols-2 gap-8 items-center mb-20">
             <div className="order-1 md:order-2 relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
               <Image
                 src="/1300rubbish/2025-06-05_18-26-35.jpg"
-                alt="Commercial Rubbish Removal"
+                alt="Full-Service Hands-On Rubbish Removal"
                 fill
                 className="object-cover"
               />
             </div>
             <div className="order-2 md:order-1">
-              <h3 className="text-2xl font-bold text-charcoal mb-4">Commercial Rubbish Removal</h3>
+              <h3 className="text-2xl font-bold text-charcoal mb-4">Full-Service Hands-On Rubbish Removal</h3>
               <p className="text-charcoal mb-6">
-                Our commercial rubbish removal services are designed to help businesses maintain clean, safe, and productive environments. We understand the importance of minimal disruption to your operations.
+                Our full-service rubbish removal services are designed to help businesses maintain clean, safe, and productive environments. We understand the importance of minimal disruption to your operations.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 80px;
+            color: white;
+        }
+
+        .slide1 .hero {
+            align-items: flex-start;
+        }
+
+        .slide2 .hero {
+            align-items: flex-end;
+        }
+
+        .slide1 .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.pexels.com/photos/221047/pexels-photo-221047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .slide2 .hero {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.pexels.com/photos/27627483/pexels-photo-27627483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        }
+
+        .hero-content {
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        .slide2 .hero-content {
+            text-align: right;
+        }
+
+        .slide2 .tagline {
+            border-left: none;
+            border-right: 4px solid #FF6347;
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+        .tagline {
+            color: #FF6347;
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-left: 4px solid #FF6347;
+            padding-left: 15px;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .cta-button {
+            background-color: #FF6347;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background-color: #FF4500;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 99, 71, 0.4);
+        }
+
+        .services {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(13, 71, 91, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 40px 80px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .service-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 30px;
+            flex: 1;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .service-card:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #FF6347;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .service-card h3 {
+            color: #FF6347;
+            font-size: 22px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #E0E0E0;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: #FF6347;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: #FF4500;
+        }
+
+        .service-link::after {
+            content: " +";
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 0 40px;
+            }
+            
+            .hero h1 {
+                font-size: 48px;
+            }
+            
+            .services {
+                flex-direction: column;
+                padding: 30px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Slide 1: Landfill/Dump Truck Theme -->
+        <div class="slide slide1 active">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="tagline">Our Future Depends On Recycling.</div>
+                    <h1>Don't Be A Punk!<br>Recycle Your Junk!</h1>
+                    <button class="cta-button">+ More About Recycle</button>
+                </div>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-icon">🗑️</div>
+                    <h3>Residential Waste</h3>
+                    <p>waste material garbage, and trash from houses!</p>
+                    <a href="#" class="service-link">Order Waste Pickup</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Business Waste</h3>
+                    <p>Take care of business, we'll take care of the wastes.</p>
+                    <a href="#" class="service-link">More About Recycle</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Roll-Off Dumpsters</h3>
+                    <p>From the clean out services to major renovations</p>
+                    <a href="#" class="service-link">Rent A Dumpster</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Colorful Bins Theme -->
+        <div class="slide slide2">
+            <div class="hero">
+                <div class="hero-content">
+                    <div class="tagline">Our Future Depends On Recycling.</div>
+                    <h1>Local Removal<br>Service Company</h1>
+                    <button class="cta-button">+ More About Trashly</button>
+                </div>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <div class="service-icon">🗑️</div>
+                    <h3>Residential Waste</h3>
+                    <p>waste material garbage, and trash from houses!</p>
+                    <a href="#" class="service-link">Order Waste Pickup</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Business Waste</h3>
+                    <p>Take care of business, we'll take care of the wastes.</p>
+                    <a href="#" class="service-link">More About Recycle</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Roll-Off Dumpsters</h3>
+                    <p>From the clean out services to major renovations</p>
+                    <a href="#" class="service-link">Rent A Dumpster</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Add some interactivity - pause on hover
+        const container = document.querySelector('.slideshow-container');
+        let slideInterval = setInterval(nextSlide, 5000);
+
+        container.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+
+        container.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(nextSlide, 5000);
+        });
+    </script>
+</body>
+</html>

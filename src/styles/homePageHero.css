@@ -1,0 +1,37 @@
+.home-page-hero {
+  position: relative;
+  height: 600px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.hero-image-container {
+  display: flex;
+  width: 300%; /* To accommodate three images side by side */
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition */
+}
+
+.hero-image-container img {
+  width: calc(100% / 3); /* Each image takes up one-third of the container */
+  height: 100%;
+  object-fit: cover; /* Ensure images fill the container without distortion */
+}
+
+.hero-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+.hero-text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-text-container p {
+  font-size: 1.5rem;
+}

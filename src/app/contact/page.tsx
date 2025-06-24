@@ -9,7 +9,7 @@ export default function ContactPage() {
       <div className="relative h-[40vh] md:h-[50vh] bg-charcoal">
         <Image
           src="/images/contact-hero.jpg"
-          alt="Contact The Southern Cross Clear"
+          alt="Contact Fair Dinkum Rubbish Removal"
           fill
           className="object-cover opacity-60"
           priority
@@ -44,9 +44,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Our Location</h3>
-                    <p className="text-charcoal">123 Rubbish Road</p>
-                    <p className="text-charcoal">Sydney, NSW 2000</p>
-                    <p className="text-charcoal">Australia</p>
+                    <p className="text-charcoal">Sydney, NSW, Australia</p>
                   </div>
                 </div>
 
@@ -74,7 +72,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-charcoal mb-2">Email</h3>
-                    <p className="text-charcoal">info@southerncrossclear.com.au</p>
+                    <p className="text-charcoal">info@fairdinkumrubbish.com.au</p>
                     <p className="text-charcoal">We aim to respond to all emails within 24 hours.</p>
                   </div>
                 </div>

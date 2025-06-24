@@ -13,7 +13,7 @@ export default function BookingPopup({ area, isOpen, onClose }: BookingPopupProp
 
   return (
     <div className="fixed inset-0 bg-charcoal/50 flex items-center justify-center z-50">
-      <div className="bg-pure-white rounded-lg p-8 max-w-lg w-full mx-4 relative shadow-2xl">
+      <div className="bg-cardBackground rounded-lg p-8 max-w-lg w-full mx-4 relative shadow-2xl">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-charcoal/60 hover:text-charcoal transition-colors"
@@ -24,13 +24,13 @@ export default function BookingPopup({ area, isOpen, onClose }: BookingPopupProp
         </button>
 
         <h2 className="text-3xl font-bold text-charcoal mb-2 text-center">{area}</h2>
-        <p className="text-charcoal/80 text-center mb-8">Choose your preferred service option:</p>
+        <p className="text-textMedium text-center mb-8">Choose your preferred service option:</p>
 
         <div className="space-y-4">
           <button
             onClick={() => window.location.href = '/tipper-rental'}
-            className="w-full py-4 px-6 bg-pure-white border-2 border-primary-green text-primary-green rounded-lg
-              hover:bg-primary-green hover:text-pure-white transition-colors duration-300 flex items-center justify-center"
+            className="w-full py-4 px-6 bg-cardBackground border-2 border-primary-green text-primary-green rounded-lg
+              hover:bg-primary-green hover:text-textDark transition-colors duration-300 flex items-center justify-center"
           >
             <span className="text-lg font-semibold">Tipper Trailer Rental</span>
             <span className="ml-2 text-sm">(Self-Load Option)</span>
@@ -38,7 +38,7 @@ export default function BookingPopup({ area, isOpen, onClose }: BookingPopupProp
 
           <button
             onClick={() => window.location.href = '/full-service'}
-            className="w-full py-4 px-6 bg-primary-green text-pure-white rounded-lg
+            className="w-full py-4 px-6 bg-primary-green text-textDark rounded-lg
               hover:bg-eucalyptus-deep transition-colors duration-300 flex items-center justify-center"
           >
             <span className="text-lg font-semibold">Full-Service Removal</span>

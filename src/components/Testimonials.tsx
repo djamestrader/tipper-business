@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 export default function Testimonials() {
   const testimonials = [
@@ -6,45 +8,77 @@ export default function Testimonials() {
       name: 'Sarah Thompson',
       rating: 5,
       date: 'June 15, 2023',
-      text: 'Absolute legends! The team showed up right on time and made the whole rubbish removal job a breeze. Fair dinkum service, highly recommend!',
+      text: 'Absolute legends! The team showed up right on time and made the whole rubbish removal job a breeze. Fair Dinkum Rubbish Removal is top-notch, highly recommend!',
       location: 'Bondi Beach'
     },
     {
       name: 'Michael Chen',
       rating: 5,
       date: 'June 12, 2023',
-      text: 'Hired their tipper trailer for my reno project. Top-notch gear, dead easy to work with, and great value for money. Couldn\'t be happier!',
+      text: 'Hired their tipper trailer for my reno project. Top-notch gear, dead easy to work with, and great value for money. Fair Dinkum Rubbish Removal made it so simple. Couldn\'t be happier!',
       location: 'Chatswood'
     },
     {
       name: 'Emma Wilson',
       rating: 5,
       date: 'June 10, 2023',
-      text: 'These guys are ace! Cleared out my whole backyard quick smart. No mucking around, just got the job done. Will definitely use them again!',
+      text: 'The Fair Dinkum Rubbish Removal team is ace! Cleared out my whole backyard quick smart. No mucking around, just got the job done. Will definitely use them again!',
       location: 'Parramatta'
     },
     {
       name: 'David Kumar',
       rating: 5,
       date: 'June 8, 2023',
-      text: 'Really impressed with these guys. Proper professional outfit and spot on with the details. Perfect tipper trailer for my landscaping job. Beauty!',
+      text: 'Really impressed with Fair Dinkum Rubbish Removal. Proper professional outfit and spot on with the details. Perfect tipper trailer for my landscaping job. Beauty!',
       location: 'North Sydney'
+    },
+    {
+      name: 'Jessica Lee',
+      rating: 5,
+      date: 'June 5, 2023',
+      text: 'Prompt, friendly, and left the place spotless. Highly recommend Fair Dinkum Rubbish Removal!',
+      location: 'Surry Hills'
+    },
+    {
+      name: 'Tom Williams',
+      rating: 5,
+      date: 'June 2, 2023',
+      text: 'Great value and super easy process. The team was very professional.',
+      location: 'Manly'
+    },
+    {
+      name: 'Priya Patel',
+      rating: 5,
+      date: 'May 30, 2023',
+      text: 'The best rubbish removal service I\'ve used. Will book again!',
+      location: 'Strathfield'
+    },
+    {
+      name: 'Liam O\'Connor',
+      rating: 5,
+      date: 'May 28, 2023',
+      text: 'Quick, reliable, and affordable. Thanks for the help!',
+      location: 'Newtown'
     }
   ];
+  const [visible, setVisible] = useState(4);
+  const handleLoadMore = () => setVisible((v) => Math.min(v + 4, testimonials.length));
 
   return (
-    <section className="py-16 bg-primary-green">
+    <section className="py-16 bg-primaryBrand">
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">What Our Customers Say</h2>
-          <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Hear it straight from our happy customers - real feedback from real Aussies
-          </p>
+          <div className="section-header text-white">
+            <h2 className="section-title text-white">What Our Customers Say</h2>
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+              Hear it straight from our happy customers - real feedback from real Aussies
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-pure-white rounded-lg p-6 shadow-lg hover:shadow-xl hover:bg-eucalyptus-light/20 transition-all duration-300">
+          {testimonials.slice(0, visible).map((testimonial, index) => (
+            <div key={index} className="bg-cardBackground rounded-lg p-6 shadow-lg hover:shadow-xl hover:bg-secondaryAccent/10 transition-all duration-300">
               <div className="flex items-center mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <svg
@@ -57,15 +91,22 @@ export default function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-charcoal/80 mb-4">{testimonial.text}</p>
-              <div className="flex justify-between items-center text-sm text-charcoal/70">
+              <p className="text-textLight mb-4">{testimonial.text}</p>
+              <div className="flex justify-between items-center text-sm text-textMedium">
                 <span className="font-medium">{testimonial.name}</span>
                 <span>{testimonial.location}</span>
               </div>
-              <div className="text-sm text-charcoal/60 mt-2">{testimonial.date}</div>
+              <div className="text-sm text-gray-500 mt-2">{testimonial.date}</div>
             </div>
           ))}
         </div>
+        {visible < testimonials.length && (
+          <div className="text-center mt-8">
+            <button className="btn-primary px-8 py-3 rounded-md font-medium" onClick={handleLoadMore}>
+              Load More
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

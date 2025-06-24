@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { useState } from 'react';
@@ -28,7 +27,7 @@ export default function ServiceAreas() {
           <div>
             <h2 className="text-4xl font-bold mb-6 text-charcoal">Where We Service</h2>
             <p className="text-lg text-charcoal/80 mb-8">
-              The Southern Cross Clear proudly serves all of Sydney. From the Northern Beaches to the Southern Shire, 
+              Fair Dinkum Rubbish Removal proudly serves all of Sydney. From the Northern Beaches to the Southern Shire, 
               Eastern Suburbs to Western Sydney - we're your local rubbish removal and tipper trailer hire service.
             </p>
             

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#333333" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  
+  <!-- Dump truck illustration -->
+  <g transform="translate(1200, 500) scale(1.5)">
+    <!-- Truck body -->
+    <rect x="0" y="0" width="300" height="120" rx="10" fill="#ffcc00" stroke="#333" stroke-width="3" />
+    
+    <!-- Truck cabin -->
+    <rect x="-100" y="30" width="120" height="90" rx="10" fill="#ffcc00" stroke="#333" stroke-width="3" />
+    
+    <!-- Truck wheels -->
+    <circle cx="-50" cy="140" r="30" fill="#333" stroke="#222" stroke-width="2" />
+    <circle cx="50" cy="140" r="30" fill="#333" stroke="#222" stroke-width="2" />
+    <circle cx="150" cy="140" r="30" fill="#333" stroke="#222" stroke-width="2" />
+    <circle cx="250" cy="140" r="30" fill="#333" stroke="#222" stroke-width="2" />
+    
+    <!-- Truck windows -->
+    <rect x="-90" y="40" width="100" height="40" rx="5" fill="#87CEEB" stroke="#333" stroke-width="2" />
+    
+    <!-- Truck dump bed (raised) -->
+    <g transform="rotate(-20, 150, 0)">
+      <rect x="0" y="-120" width="300" height="120" rx="10" fill="#ffcc00" stroke="#333" stroke-width="3" />
+    </g>
+    
+    <!-- Waste falling -->
+    <g>
+      <path d="M150,-50 Q200,-80 250,-50 L250,0 L150,0 Z" fill="#8B4513" stroke="#333" stroke-width="2" />
+      <ellipse cx="180" cy="-30" rx="10" ry="5" fill="#3CB371" transform="rotate(30)" />
+      <ellipse cx="210" cy="-40" rx="8" ry="4" fill="#CD853F" transform="rotate(-15)" />
+      <ellipse cx="230" cy="-20" rx="12" ry="6" fill="#808080" transform="rotate(45)" />
+    </g>
+  </g>
+  
+  <!-- Recycling symbols scattered around -->
+  <g fill="#3CB371" opacity="0.6">
+    <!-- Recycling symbol 1 -->
+    <path d="M300,200 l30,50 l-60,0 z" transform="rotate(120, 300, 200)" />
+    <path d="M300,200 l30,50 l-60,0 z" transform="rotate(240, 300, 200)" />
+    <path d="M300,200 l30,50 l-60,0 z" transform="rotate(0, 300, 200)" />
+    
+    <!-- Recycling symbol 2 -->
+    <path d="M1600,300 l30,50 l-60,0 z" transform="rotate(120, 1600, 300)" />
+    <path d="M1600,300 l30,50 l-60,0 z" transform="rotate(240, 1600, 300)" />
+    <path d="M1600,300 l30,50 l-60,0 z" transform="rotate(0, 1600, 300)" />
+    
+    <!-- Recycling symbol 3 -->
+    <path d="M500,800 l30,50 l-60,0 z" transform="rotate(120, 500, 800)" />
+    <path d="M500,800 l30,50 l-60,0 z" transform="rotate(240, 500, 800)" />
+    <path d="M500,800 l30,50 l-60,0 z" transform="rotate(0, 500, 800)" />
+  </g>
+  
+  <!-- Overlay for text readability -->
+  <rect width="1920" height="1080" fill="rgba(0,0,0,0.4)" />
+</svg>

@@ -42,8 +42,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/images/about-story.jpg"
-                alt="The Southern Cross Clear Team"
+                src="/1300rubbish/2025-06-05_18-26-35.jpg"
+                alt="Fair Dinkum Rubbish Removal Team"
                 fill
                 className="object-cover"
               />
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-off-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 bg-primaryBrand rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-off-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 bg-primaryBrand rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"></path>
                 </svg>
@@ -88,7 +88,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-off-white p-8 rounded-lg shadow-md">
-              <div className="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 bg-primaryBrand rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
                 </svg>
@@ -120,19 +120,19 @@ export default function AboutPage() {
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-green mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-secondaryAccent mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   <span>Cost-effective solution</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-green mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-secondaryAccent mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   <span>Work at your own pace</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-green mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-secondaryAccent mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   <span>No heavy lifting on our part</span>
@@ -150,19 +150,19 @@ export default function AboutPage() {
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-green mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-secondaryAccent mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   <span>No heavy lifting required from you</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-green mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-secondaryAccent mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   <span>Quick and efficient service</span>
                 </li>
                 <li className="flex items-start">
-                  <svg className="w-5 h-5 text-primary-green mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="w-5 h-5 text-secondaryAccent mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                   </svg>
                   <span>Professional team handles everything</span>
@@ -196,8 +196,8 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-charcoal mb-2">John Smith</h3>
-              <p className="text-primary-green font-medium mb-4">Founder & CEO</p>
+              <h3 className="text-xl font-bold text-charcoal mb-2">Jack Wilson</h3>
+              <p className="text-primaryBrand font-medium mb-4">Founder & CEO</p>
               <p className="text-charcoal">
                 With over 15 years of experience in the waste management industry, John founded The Southern Cross Clear with a vision to revolutionize rubbish removal services in Sydney.
               </p>
@@ -212,8 +212,8 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-charcoal mb-2">Sarah Johnson</h3>
-              <p className="text-primary-green font-medium mb-4">Operations Manager</p>
+              <h3 className="text-xl font-bold text-charcoal mb-2">Emily Brown</h3>
+              <p className="text-primaryBrand font-medium mb-4">Operations Manager</p>
               <p className="text-charcoal">
                 Sarah ensures that all our operations run smoothly and efficiently, coordinating our teams and ensuring that every job is completed to the highest standard.
               </p>
@@ -228,8 +228,8 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold text-charcoal mb-2">Michael Chen</h3>
-              <p className="text-primary-green font-medium mb-4">Customer Service Manager</p>
+              <h3 className="text-xl font-bold text-charcoal mb-2">Olivia Lee</h3>
+              <p className="text-primaryBrand font-medium mb-4">Customer Service Manager</p>
               <p className="text-charcoal">
                 Michael leads our customer service team, ensuring that every client receives personalized attention and that their needs are met with the utmost care and professionalism.
               </p>
@@ -250,7 +250,7 @@ export default function AboutPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-off-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-primary-green rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primaryBrand rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>
@@ -262,7 +262,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-off-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-primary-green rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primaryBrand rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
                 </svg>
@@ -274,7 +274,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-off-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-primary-green rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primaryBrand rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z" clipRule="evenodd"></path>
                   <path fillRule="evenodd" d="M10 5a1 1 0 011 1v3.586l2.707 2.707a1 1 0 01-1.414 1.414l-3-3A1 1 0 019 10V6a1 1 0 011-1z" clipRule="evenodd"></path>
@@ -287,7 +287,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-off-white p-6 rounded-lg shadow-md">
-              <div className="w-12 h-12 bg-primary-green rounded-full flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-primaryBrand rounded-full flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-pure-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"></path>
                 </svg>
@@ -302,17 +302,17 @@ export default function AboutPage() {
       </div>
 
       {/* Call to Action */}
-      <div className="py-16 bg-primary-green">
+      <div className="py-16 bg-primaryBrand">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold text-pure-white mb-4">Ready to Experience The Southern Cross Clear Difference?</h2>
           <p className="text-xl text-pure-white mb-8 max-w-3xl mx-auto">
             Contact us today to discuss your rubbish removal needs and receive a free, no-obligation quote.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link href="/quote" className="bg-pure-white text-primary-green px-8 py-3 rounded-md font-medium hover:bg-off-white transition-colors duration-300">
+            <Link href="/quote" className="bg-pure-white text-primaryBrand px-8 py-3 rounded-md font-medium hover:bg-off-white transition-colors duration-300">
               Get a Quote
             </Link>
-            <Link href="/contact" className="border-2 border-pure-white text-pure-white px-8 py-3 rounded-md font-medium hover:bg-eucalyptus-deep transition-colors duration-300">
+            <Link href="/contact" className="border-2 border-pure-white text-pure-white px-8 py-3 rounded-md font-medium hover:bg-secondaryBrand transition-colors duration-300">
               Contact Us
             </Link>
           </div>

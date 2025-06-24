@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Background -->
+  <rect fill="#228B22" width="400" height="200"/>
+  
+  <!-- House silhouette -->
+  <polygon fill="#333" points="80,100 200,30 320,100 320,170 80,170"/>
+  
+  <!-- Door -->
+  <rect fill="#8B4513" x="170" y="110" width="60" height="60"/>
+  <circle fill="#FFD700" cx="185" cy="140" r="3"/>
+  
+  <!-- Windows -->
+  <rect fill="#87CEEB" x="110" y="110" width="40" height="30"/>
+  <rect fill="#87CEEB" x="250" y="110" width="40" height="30"/>
+  
+  <!-- Roof -->
+  <polygon fill="#A52A2A" points="80,100 200,30 320,100 290,100 200,40 110,100"/>
+  
+  <!-- Waste bin -->
+  <rect fill="#DC143C" x="50" y="120" width="40" height="50" rx="5"/>
+  <rect fill="#333" x="50" y="115" width="40" height="10"/>
+  <text x="70" y="150" fill="white" font-family="Arial" font-size="12" text-anchor="middle">WASTE</text>
+  
+  <!-- Overlay for better text visibility -->
+  <rect fill="rgba(0,0,0,0.2)" width="400" height="200"/>
+</svg>

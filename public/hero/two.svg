@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50" />
+      <stop offset="100%" stop-color="#4a6572" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  
+  <!-- Recycling bins in different colors -->
+  <g transform="translate(960, 540) scale(1)">
+    <!-- Red bin -->
+    <g transform="translate(-400, 0)">
+      <path d="M-60,100 L60,100 L50,-100 L-50,-100 Z" fill="#e74c3c" stroke="#333" stroke-width="3" />
+      <rect x="-70" y="100" width="140" height="20" rx="5" fill="#c0392b" stroke="#333" stroke-width="2" />
+      <rect x="-50" y="-120" width="100" height="20" rx="5" fill="#c0392b" stroke="#333" stroke-width="2" />
+      <text x="0" y="0" font-family="Arial" font-size="40" font-weight="bold" fill="white" text-anchor="middle">LANDFILL</text>
+    </g>
+    
+    <!-- Yellow bin -->
+    <g transform="translate(0, 0)">
+      <path d="M-60,100 L60,100 L50,-100 L-50,-100 Z" fill="#f1c40f" stroke="#333" stroke-width="3" />
+      <rect x="-70" y="100" width="140" height="20" rx="5" fill="#f39c12" stroke="#333" stroke-width="2" />
+      <rect x="-50" y="-120" width="100" height="20" rx="5" fill="#f39c12" stroke="#333" stroke-width="2" />
+      <text x="0" y="0" font-family="Arial" font-size="40" font-weight="bold" fill="white" text-anchor="middle">RECYCLE</text>
+    </g>
+    
+    <!-- Green bin -->
+    <g transform="translate(400, 0)">
+      <path d="M-60,100 L60,100 L50,-100 L-50,-100 Z" fill="#2ecc71" stroke="#333" stroke-width="3" />
+      <rect x="-70" y="100" width="140" height="20" rx="5" fill="#27ae60" stroke="#333" stroke-width="2" />
+      <rect x="-50" y="-120" width="100" height="20" rx="5" fill="#27ae60" stroke="#333" stroke-width="2" />
+      <text x="0" y="0" font-family="Arial" font-size="40" font-weight="bold" fill="white" text-anchor="middle">ORGANIC</text>
+    </g>
+  </g>
+  
+  <!-- Recycling symbols scattered around -->
+  <g fill="white" opacity="0.2">
+    <!-- Recycling symbol 1 -->
+    <path d="M300,200 l40,70 l-80,0 z" transform="rotate(120, 300, 200)" />
+    <path d="M300,200 l40,70 l-80,0 z" transform="rotate(240, 300, 200)" />
+    <path d="M300,200 l40,70 l-80,0 z" transform="rotate(0, 300, 200)" />
+    
+    <!-- Recycling symbol 2 -->
+    <path d="M1600,300 l40,70 l-80,0 z" transform="rotate(120, 1600, 300)" />
+    <path d="M1600,300 l40,70 l-80,0 z" transform="rotate(240, 1600, 300)" />
+    <path d="M1600,300 l40,70 l-80,0 z" transform="rotate(0, 1600, 300)" />
+    
+    <!-- Recycling symbol 3 -->
+    <path d="M500,800 l40,70 l-80,0 z" transform="rotate(120, 500, 800)" />
+    <path d="M500,800 l40,70 l-80,0 z" transform="rotate(240, 500, 800)" />
+    <path d="M500,800 l40,70 l-80,0 z" transform="rotate(0, 500, 800)" />
+    
+    <!-- Recycling symbol 4 -->
+    <path d="M1200,700 l40,70 l-80,0 z" transform="rotate(120, 1200, 700)" />
+    <path d="M1200,700 l40,70 l-80,0 z" transform="rotate(240, 1200, 700)" />
+    <path d="M1200,700 l40,70 l-80,0 z" transform="rotate(0, 1200, 700)" />
+  </g>
+  
+  <!-- Overlay for text readability -->
+  <rect width="1920" height="1080" fill="rgba(0,0,0,0.3)" />
+</svg>

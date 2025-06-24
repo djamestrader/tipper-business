@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trashly - Don't Be A Punk! Recycle Your Junk!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(to right, #1e3a2f 0%, #2d5548 100%);
+            color: white;
+            position: relative;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo::before {
+            content: '⚡';
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-size: 20px;
+            transform: rotate(-15deg);
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+        }
+
+        .contact-icon {
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 107, 53, 0.2);
+            border: 2px solid #ff6b35;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .contact-details strong {
+            color: #ff6b35;
+            text-decoration: underline;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            padding: 18px 24px;
+            display: block;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-menu li a:hover,
+        .nav-menu li a.active {
+            background: #ff6b35;
+            border-bottom-color: #e55529;
+        }
+
+        .pickup-btn {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            padding: 12px 28px;
+            border: 2px solid #ff6b35;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .pickup-btn:hover {
+            background: transparent;
+            color: #ff6b35;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1000"><rect fill="%2387CEEB" width="1920" height="400"/><rect fill="%23B0E0E6" y="300" width="1920" height="100"/><polygon fill="%23654321" points="0,400 200,380 400,390 600,370 800,360 1000,350 1200,340 1400,330 1600,320 1800,310 1920,300 1920,1000 0,1000"/><circle fill="%23fff" cx="300" cy="150" r="15" opacity="0.8"/><circle fill="%23fff" cx="500" cy="100" r="10" opacity="0.6"/><circle fill="%23fff" cx="700" cy="120" r="12" opacity="0.7"/><circle fill="%23fff" cx="900" cy="80" r="8" opacity="0.5"/></svg>');
+            background-size: cover;
+            background-position: center;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Truck illustration */
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            width: 500px;
+            height: 300px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300"><rect fill="%23ff6b35" x="150" y="80" width="280" height="120" rx="15"/><rect fill="%23e55529" x="160" y="90" width="260" height="100" rx="10"/><circle fill="%23333" cx="200" cy="220" r="35"/><circle fill="%23555" cx="200" cy="220" r="25"/><circle fill="%23333" cx="350" cy="220" r="35"/><circle fill="%23555" cx="350" cy="220" r="25"/><rect fill="%23666" x="160" y="40" width="80" height="60" rx="5"/><polygon fill="%23888" points="240,100 260,60 380,60 400,100"/><rect fill="%23333" x="170" y="100" width="200" height="5"/><rect fill="%23333" x="170" y="110" width="200" height="5"/></svg>') no-repeat;
+            background-size: contain;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 50px;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-tagline {
+            color: #ff6b35;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .hero-tagline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 40px;
+            background: #ff6b35;
+        }
+
+        .hero-title {
+            font-size: 5.5rem;
+            font-weight: 900;
+            line-height: 0.9;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            letter-spacing: -2px;
+        }
+
+        .hero-subtitle {
+            font-size: 5.5rem;
+            font-weight: 900;
+            color: #ff6b35;
+            line-height: 0.9;
+            margin-bottom: 50px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            letter-spacing: -2px;
+        }
+
+        .hero-cta {
+            background: linear-gradient(45deg, #ff6b35, #ff8c42);
+            color: white;
+            padding: 18px 35px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+        .hero-cta:hover {
+            background: linear-gradient(45deg, #e55529, #ff7a35);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.5);
+        }
+
+        /* Services Section */
+        .services {
+            background: transparent;
+            padding: 0;
+            margin-top: -150px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            padding: 0 50px;
+            position: relative;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, #1e3a2f 0%, #2d5548 100%);
+            color: white;
+            padding: 45px 35px;
+            border-radius: 12px;
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 107, 53, 0.1);
+            position: relative;
+            z-index: 15;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            border-color: rgba(255, 107, 53, 0.3);
+        }
+
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #4a9eff, #6bb8ff);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            flex-shrink: 0;
+            box-shadow: 0 8px 25px rgba(74, 158, 255, 0.3);
+        }
+
+        .service-info h3 {
+            color: #ff6b35;
+            font-size: 26px;
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+
+        .service-info p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        .service-link {
+            color: #ff6b35;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover {
+            color: #ff8c42;
+        }
+
+        .service-link::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ff6b35;
+            transition: width 0.3s ease;
+        }
+
+        .service-link:hover::after {
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .header-contact {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title,
+            .hero-subtitle {
+                font-size: 3.5rem;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .hero::after {
+                display: none;
+            }
+            
+            .service-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-top,
+            .nav-container,
+            .hero-content,
+            .services-grid {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">Trashly</div>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <div>+300 456 78 901</div>
+                        <div><strong>trashly@yourdomain.com</strong></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-details">
+                        <div>Mon - Sun</div>
+                        <div>5:00 am to 6:00 pm</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <div>Main Branch</div>
+                        <div>24 Fifth st, Los Angeles, USA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="nav-bar">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home Pages</a></li>
+                    <li><a href="#">Our Pages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a href="#" class="pickup-btn">+ Request Pickup</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-tagline">Our Future Depends On Recycling.</div>
+            <h1 class="hero-title">Don't Be A Punk!</h1>
+            <h2 class="hero-subtitle">Recycle Your Junk!</h2>
+            <a href="#" class="hero-cta">+ More About Recycle</a>
+        </div>
+    </section>
+
+    <!-- Services Section */
+    <section class="services">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🗑️</div>
+                <div class="service-info">
+                    <h3>Residential Waste</h3>
+                    <p>waste material garbage, and trash from houses!</p>
+                    <a href="#" class="service-link">Order Waste Pickup +</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <div class="service-info">
+                    <h3>Business Waste</h3>
+                    <p>Take care of business, we'll take care of the wastes.</p>
+                    <a href="#" class="service-link">More About Recycle +</a>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+                <div class="service-info">
+                    <h3>Roll-Off Dumpsters</h3>
+                    <p>From the clean out services to major renovations</p>
+                    <a href="#" class="service-link">Rent A Dumpster +</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

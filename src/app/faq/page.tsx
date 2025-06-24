@@ -34,9 +34,9 @@ export default function FAQPage() {
               
               <div className="space-y-6">
                 <div className="bg-pure-white p-6 rounded-lg shadow-md">
-                  <h3 className="text-xl font-bold text-charcoal mb-3">What is The Southern Cross Clear?</h3>
+                  <h3 className="text-xl font-bold text-charcoal mb-3">What is Fair Dinkum Rubbish Removal?</h3>
                   <p className="text-charcoal">
-                    The Southern Cross Clear is a professional rubbish removal company based in Sydney. We offer two main services: Self-Load Tipper Trailer Rental and Full-Service Hands-On Rubbish Removal. Our mission is to provide efficient, reliable, and environmentally responsible waste removal solutions for residential and commercial clients.
+                    Fair Dinkum Rubbish Removal is a professional rubbish removal company based in Sydney. We offer two main services: Self-Load Tipper Trailer Rental and Full-Service Hands-On Rubbish Removal. Our mission is to provide efficient, reliable, and environmentally responsible waste removal solutions for residential and commercial clients.
                   </p>
                 </div>
 
@@ -55,7 +55,7 @@ export default function FAQPage() {
                   <ul className="list-disc pl-6 mt-2 space-y-1 text-charcoal">
                     <li>Use our online quote form on our website</li>
                     <li>Call us directly at (02) 1234 5678</li>
-                    <li>Send us an email at info@southerncrossclear.com.au</li>
+                    <li>Send us an email at info@fairdinkumrubbish.com.au</li>
                   </ul>
                   <p className="text-charcoal mt-2">
                     We aim to respond to all quote requests within 24 hours.

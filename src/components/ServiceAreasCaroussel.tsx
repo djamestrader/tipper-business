@@ -46,26 +46,29 @@ export default function ServiceAreasCarousel() {
         cancelAnimationFrame(animationRef.current);
       }
     };
-  }, []);
+  }, [isPaused]);
 
   return (
-    <section className="bg-off-white py-12 overflow-hidden">
-      <div className="container-custom">
-        <h2 className="text-3xl font-bold text-charcoal text-center mb-8">Service Areas</h2>
-        <p className="text-lg text-charcoal text-center mb-8 max-w-2xl mx-auto">
-          We provide reliable rubbish removal and tipper trailer hire services across Greater Sydney
-        </p>
+    <section className="bg-neutralBackground py-16 overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h4 className="text-primaryBrand uppercase tracking-wider text-sm font-bold mb-2">Where We Serve</h4>
+          <h2 className="text-3xl md:text-4xl font-bold text-textLight mb-4">Service Areas</h2>
+          <p className="text-base md:text-lg text-textLight max-w-2xl mx-auto">
+            We provide reliable rubbish removal and tipper trailer hire services across Greater Sydney
+          </p>
+        </div>
         <div className="flex items-center justify-center">
           <div className="relative w-full overflow-hidden">
             {/* Left gradient overlay */}
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-off-white to-transparent z-10"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-neutralBackground to-transparent z-10"></div>
             
             {/* Right gradient overlay */}
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-off-white to-transparent z-10"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-neutralBackground to-transparent z-10"></div>
             
             <div
               ref={scrollRef}
-              className="flex transition-transform duration-100 ease-linear py-4"
+              className="flex transition-transform duration-100 ease-linear py-6"
               style={{ gap: '1.5rem' }}
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
@@ -77,10 +80,10 @@ export default function ServiceAreasCarousel() {
                 >
                   <div className="flex items-center justify-center">
                     <div 
-                      className="flex items-center space-x-2 bg-pure-white rounded-full px-6 py-3 shadow-md hover:shadow-lg transition-all duration-300 hover:bg-primary-green group"
+                      className="flex items-center space-x-2 bg-white rounded-full px-6 py-3 shadow-card hover:shadow-lg transition-all duration-300 hover:bg-primaryBrand group"
                     >
                       <svg
-                        className="w-5 h-5 text-primary-green group-hover:text-pure-white transition-colors duration-300"
+                        className="w-5 h-5 text-primaryBrand group-hover:text-textDark transition-colors duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -92,7 +95,7 @@ export default function ServiceAreasCarousel() {
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                         />
                       </svg>
-                      <span className="text-charcoal font-medium whitespace-nowrap group-hover:text-pure-white transition-colors duration-300">{area}</span>
+                      <span className="text-textLight font-medium whitespace-nowrap group-hover:text-textDark transition-colors duration-300">{area}</span>
                     </div>
                   </div>
                 </div>

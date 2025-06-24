@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <!-- Background -->
+  <rect fill="#708090" width="400" height="200"/>
+  
+  <!-- Office building -->
+  <rect fill="#333" x="100" y="40" width="200" height="160"/>
+  
+  <!-- Windows grid -->
+  <g fill="#87CEEB">
+    <!-- Row 1 -->
+    <rect x="120" y="60" width="20" height="15"/>
+    <rect x="150" y="60" width="20" height="15"/>
+    <rect x="180" y="60" width="20" height="15"/>
+    <rect x="210" y="60" width="20" height="15"/>
+    <rect x="240" y="60" width="20" height="15"/>
+    <rect x="270" y="60" width="20" height="15"/>
+    
+    <!-- Row 2 -->
+    <rect x="120" y="85" width="20" height="15"/>
+    <rect x="150" y="85" width="20" height="15"/>
+    <rect x="180" y="85" width="20" height="15"/>
+    <rect x="210" y="85" width="20" height="15"/>
+    <rect x="240" y="85" width="20" height="15"/>
+    <rect x="270" y="85" width="20" height="15"/>
+    
+    <!-- Row 3 -->
+    <rect x="120" y="110" width="20" height="15"/>
+    <rect x="150" y="110" width="20" height="15"/>
+    <rect x="180" y="110" width="20" height="15"/>
+    <rect x="210" y="110" width="20" height="15"/>
+    <rect x="240" y="110" width="20" height="15"/>
+    <rect x="270" y="110" width="20" height="15"/>
+    
+    <!-- Row 4 -->
+    <rect x="120" y="135" width="20" height="15"/>
+    <rect x="150" y="135" width="20" height="15"/>
+    <rect x="180" y="135" width="20" height="15"/>
+    <rect x="210" y="135" width="20" height="15"/>
+    <rect x="240" y="135" width="20" height="15"/>
+    <rect x="270" y="135" width="20" height="15"/>
+  </g>
+  
+  <!-- Door -->
+  <rect fill="#696969" x="180" y="160" width="40" height="40"/>
+  
+  <!-- Commercial waste bin -->
+  <rect fill="#DC143C" x="50" y="140" width="30" height="40" rx="3"/>
+  <rect fill="#333" x="50" y="135" width="30" height="5"/>
+  <text x="65" y="160" fill="white" font-family="Arial" font-size="8" text-anchor="middle">WASTE</text>
+  
+  <!-- Office furniture being disposed -->
+  <rect fill="#A0522D" x="320" y="150" width="40" height="30"/>
+  <rect fill="#A0522D" x="330" y="140" width="20" height="10"/>
+  
+  <!-- Overlay for better text visibility -->
+  <rect fill="rgba(0,0,0,0.2)" width="400" height="200"/>
+</svg>

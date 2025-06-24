@@ -1,0 +1,18 @@
+Quick Quote
+Name
+Number
+Email
+Suburb
+Select Waste Size
+    2 Cubic Meters
+    3 Cubic Meters
+    4 Cubic Meters
+    5 Cubic Meters
+    6 Cubic Meters
+Select Waste Type
+    Household Junk
+    Office & Business Commercial Waste
+    Green and Garden Waste
+    Trade Building Renovation Waste
+    Masonry Brick Concrete Waste
+    Demolition Waste

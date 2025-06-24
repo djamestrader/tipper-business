@@ -1,21 +1,21 @@
-import HeroCarousel from '../components/HeroCarousel';
+import HeroSlideshow from '../components/HeroSlideshow';
 import Services from '../components/Services';
+import ItemsWeTake from '../components/ItemsWeTake';
 import WhyChooseUs from '../components/WhyChooseUs';
 import ServiceProcess from '../components/ServiceProcess';
-import ServiceAreasCarousel from '../components/ServiceAreasCaroussel';
+import ServiceAreasCaroussel from '../components/ServiceAreasCaroussel';
 import Testimonials from '../components/Testimonials';
 import CallToAction from '../components/CallToAction';
-import ItemsWeTake from '../components/ItemsWeTake';
 
 export default function Home() {
   return (
     <>
-      <HeroCarousel />
+      <HeroSlideshow />
+      <ServiceAreasCaroussel />
       <Services />
       <ItemsWeTake />
       <WhyChooseUs />
       <ServiceProcess />
-      <ServiceAreasCarousel />
       <Testimonials />
       <CallToAction />
     </>
