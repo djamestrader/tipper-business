@@ -7,7 +7,7 @@ import '../styles/design-system.css';
 
 const HeroSlideshow: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 2;
+  const totalSlides = 3;
   const slideIntervalRef = useRef<NodeJS.Timeout | null>(null);
   
   // Function to show a specific slide
@@ -60,7 +60,7 @@ const HeroSlideshow: React.FC = () => {
         <div 
           className="relative w-full h-full flex flex-col justify-center items-start px-8 md:px-20 text-textDark"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/hero/one.svg")',
+            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/hero/hero-2.jpeg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
@@ -71,10 +71,10 @@ const HeroSlideshow: React.FC = () => {
               <span className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-10 bg-primaryBrand"></span>
               OUR FUTURE DEPENDS ON RECYCLING
             </div>
-            <h1 className="text-4xl md:text-6xl font-black leading-tight mb-4 text-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-white text-white leading-tight mb-4 text-shadow-lg">
               Don't Be A Punk!<br/>Recycle Your Junk!
             </h1>
-            <p className="text-lg text-gray-200 mb-8 max-w-xl">Professional waste removal services across Sydney. Fast, reliable, and environmentally responsible.</p>
+            <p className="text-lg text-white mb-8 max-w-xl">Professional waste removal services across Sydney. Fast, reliable, and environmentally responsible.</p>
             <Link 
               href="/quote" 
               className="btn-primary inline-flex items-center gap-2 transform hover:-translate-y-2"
@@ -95,7 +95,7 @@ const HeroSlideshow: React.FC = () => {
         <div 
           className="relative w-full h-full flex flex-col justify-center items-end px-8 md:px-20 text-textDark"
           style={{
-            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/hero/two.svg")',
+            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/hero/hero-1.jpeg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed'
@@ -106,10 +106,10 @@ const HeroSlideshow: React.FC = () => {
               <span className="absolute right-0 top-1/2 -translate-y-1/2 w-1 h-10 bg-primaryBrand"></span>
               SYDNEY'S TRUSTED WASTE EXPERTS
             </div>
-            <h1 className="text-4xl md:text-6xl font-black leading-tight mb-4 text-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-white text-white leading-tight mb-4 text-shadow-lg">
               Local Removal<br/>Service Company
             </h1>
-            <p className="text-lg text-gray-200 mb-8 ml-auto max-w-xl">Family-owned business with over 15 years of experience in waste management and recycling solutions.</p>
+            <p className="text-lg text-white mb-8 ml-auto max-w-xl">Family-owned business with over 15 years of experience in waste management and recycling solutions.</p>
             <Link 
               href="/about" 
               className="btn-primary inline-flex items-center gap-2 transform hover:-translate-y-2"
@@ -123,48 +123,40 @@ const HeroSlideshow: React.FC = () => {
         </div>
       </div>
 
-      {/* Services Section */}
-      <div className="absolute bottom-0 left-0 right-0 bg-darkBackground/95 backdrop-blur-md py-8 md:py-10 px-4 md:px-20 flex flex-col md:flex-row justify-between gap-4 md:gap-8 z-20">
-        <div className="bg-white/10 rounded-standard p-6 md:p-8 flex-1 text-textDark transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-2 hover:shadow-lg">
-          <div className="w-12 h-12 md:w-15 md:h-15 bg-primaryBrand rounded-md mb-4 md:mb-5 flex items-center justify-center text-xl md:text-2xl">
-            🗑️
+      {/* Services Section has been moved to a separate component */}
+
+      {/* Slide 3: Construction/Tipper Truck Theme */}
+      <div 
+        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${currentSlide === 2 ? 'opacity-100' : 'opacity-0'}`}
+      >
+        <div 
+          className="relative w-full h-full flex flex-col justify-center items-center px-8 md:px-20 text-textDark"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/hero/one.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed'
+          }}
+        >
+          <div className="max-w-2xl z-10 text-center fadeIn">
+            <div className="relative px-6 text-primaryBrand text-xl font-semibold mb-6 tracking-section-header">
+              <span className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-1 h-10 bg-primaryBrand"></span>
+              HEAVY DUTY WASTE SOLUTIONS
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black text-white leading-tight mb-4 text-shadow-lg">
+              Construction &<br/>Demolition Experts
+            </h1>
+            <p className="text-lg text-white mb-8 max-w-xl mx-auto">Specialized equipment and experienced team for all your construction waste removal needs.</p>
+            <Link 
+              href="/services/construction" 
+              className="btn-primary inline-flex items-center gap-2 transform hover:-translate-y-2"
+            >
+              <span>Our Services</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </Link>
           </div>
-          <h3 className="text-primaryBrand text-xl md:text-2xl font-semibold mb-3 md:mb-4">Residential Waste</h3>
-          <p className="text-gray-300 mb-4 md:mb-5 leading-relaxed text-sm md:text-base">Professional removal of household waste, junk, and unwanted items from your home.</p>
-          <Link href="/services/residential" className="text-primaryBrand font-semibold text-sm md:text-base hover:text-hover transition-colors duration-300 inline-flex items-center gap-1">
-            <span>Order Waste Pickup</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </Link>
-        </div>
-        
-        <div className="bg-white/10 rounded-standard p-6 md:p-8 flex-1 text-textDark transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-2 hover:shadow-lg">
-          <div className="w-12 h-12 md:w-15 md:h-15 bg-primaryBrand rounded-md mb-4 md:mb-5 flex items-center justify-center text-xl md:text-2xl">
-            🏢
-          </div>
-          <h3 className="text-primaryBrand text-xl md:text-2xl font-semibold mb-3 md:mb-4">Business Waste</h3>
-          <p className="text-gray-300 mb-4 md:mb-5 leading-relaxed text-sm md:text-base">Take care of business, we'll take care of the waste. Commercial solutions for all industries.</p>
-          <Link href="/services/commercial" className="text-primaryBrand font-semibold text-sm md:text-base hover:text-hover transition-colors duration-300 inline-flex items-center gap-1">
-            <span>Business Services</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </Link>
-        </div>
-        
-        <div className="bg-white/10 rounded-standard p-6 md:p-8 flex-1 text-textDark transition-all duration-300 border border-white/20 hover:bg-white/20 hover:-translate-y-2 hover:shadow-lg">
-          <div className="w-12 h-12 md:w-15 md:h-15 bg-primaryBrand rounded-md mb-4 md:mb-5 flex items-center justify-center text-xl md:text-2xl">
-            🏗️
-          </div>
-          <h3 className="text-primaryBrand text-xl md:text-2xl font-semibold mb-3 md:mb-4">Construction Waste</h3>
-          <p className="text-gray-300 mb-4 md:mb-5 leading-relaxed text-sm md:text-base">Reliable and fast removal of building debris and construction waste for a safer work site.</p>
-          <Link href="/services/construction" className="text-primaryBrand font-semibold text-sm md:text-base hover:text-hover transition-colors duration-300 inline-flex items-center gap-1">
-            <span>Construction Cleanup</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </Link>
         </div>
       </div>
 

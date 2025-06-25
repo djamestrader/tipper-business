@@ -1,4 +1,5 @@
 import HeroSlideshow from '../components/HeroSlideshow';
+import ServiceCards from '../components/ServiceCards';
 import Services from '../components/Services';
 import ItemsWeTake from '../components/ItemsWeTake';
 import WhyChooseUs from '../components/WhyChooseUs';
@@ -10,7 +11,13 @@ import CallToAction from '../components/CallToAction';
 export default function Home() {
   return (
     <>
-      <HeroSlideshow />
+      <div className="relative">
+        <HeroSlideshow />
+        <div className="container-custom relative z-30">
+          <ServiceCards />
+        </div>
+      </div>
+      <div className="pt-32"></div>
       <ServiceAreasCaroussel />
       <Services />
       <ItemsWeTake />
