@@ -78,7 +78,10 @@ const Header = () => {
               <Link href="/pricing" className="text-white hover:bg-primaryBrand border-b-2 border-transparent hover:border-primaryBrand py-4 px-4 lg:px-6 inline-block font-medium transition-all duration-300">Pricing</Link>
             </li>
             <li>
-              <Link href="/areas" className="text-white hover:bg-primaryBrand border-b-2 border-transparent hover:border-primaryBrand py-4 px-4 lg:px-6 inline-block font-medium transition-all duration-300">Service Areas</Link>
+              <Link href="/areas-we-service" className="text-white hover:bg-primaryBrand border-b-2 border-transparent hover:border-primaryBrand py-4 px-4 lg:px-6 inline-block font-medium transition-all duration-300">Service Areas</Link>
+            </li>
+            <li>
+              <Link href="/construction-partners" className="text-white hover:bg-primaryBrand border-b-2 border-transparent hover:border-primaryBrand py-4 px-4 lg:px-6 inline-block font-medium transition-all duration-300">Construction Partners</Link>
             </li>
             <li>
               <Link href="/about" className="text-white hover:bg-primaryBrand border-b-2 border-transparent hover:border-primaryBrand py-4 px-4 lg:px-6 inline-block font-medium transition-all duration-300">About</Link>
@@ -124,7 +127,8 @@ const Header = () => {
             <a href="/services" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Service Needs</a>
             <a href="/types-of-waste" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Types of Waste</a>
             <a href="/pricing" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Pricing</a>
-            <a href="/areas" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Service Areas</a>
+            <a href="/areas-we-service" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Service Areas</a>
+            <a href="/construction-partners" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Construction Partners</a>
             <a href="/about" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">About</a>
             <a href="/contact" className="py-3 border-b border-gray-700 text-white hover:text-primaryBrand">Contact Us</a>
             

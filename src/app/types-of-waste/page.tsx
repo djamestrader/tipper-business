@@ -16,9 +16,9 @@ function ImageSlideshow() {
   // Array of image paths for the slideshow - using the JPG images from types-of-waste directory
   const images = [
     // These are the specific images requested for the hero section transition
-    "/types-of-waste/masonry-brick-concrete-waste.jpg",  // Masonry waste image
-    "/types-of-waste/demolition-waste.jpg",              // Demolition waste image
-    "/types-of-waste/household-junk.jpg"                 // Household junk image
+    "/types-of-waste/hero-waste.jpeg",  // Masonry waste image
+    "/types-of-waste/hero-waste-1.jpeg",              // Demolition waste image
+    "/types-of-waste/hero-waste-2.jpeg"                 // Household junk image
   ];
 
   useEffect(() => {

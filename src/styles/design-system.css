@@ -1,13 +1,32 @@
 /* Trashly Inspired Design System CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;900&family=Rajdhani:wght@400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-brand: #00ffff;
+  --secondary-accent: #8b5cf6;
+  --accent-pink: #ff0080;
+  --accent-green: #00ff88;
+  --dark-bg: #0a0a0f;
+  --darker-bg: #05050a;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --card-bg: rgba(255,255,255,0.05);
+  --border-glow: rgba(0,255,255,0.3);
+  --link: #00ffff;
+  --hover: #8b5cf6;
+  --radius: 20px;
+}
+
 /* Base Styles */
 body {
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  color: #333333;
+  font-family: 'Rajdhani', 'Orbitron', sans-serif;
+  background: linear-gradient(45deg, var(--dark-bg), var(--darker-bg));
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
@@ -40,20 +59,21 @@ h4 {
 }
 
 a {
-  color: #007BFF;
+  color: var(--link);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
 
 a:hover {
-  color: #FF9933;
-  text-decoration: underline;
+  color: var(--hover);
+  background: rgba(0,255,255,0.1);
+  box-shadow: 0 0 20px var(--border-glow);
 }
 
 /* Component Styles */
 /* Button Styles */
 .btn-primary {
-  @apply bg-primaryBrand text-textDark py-3 px-6 rounded-button font-semibold uppercase tracking-button shadow-button;
+  @apply bg-primaryBrand text-textPrimary py-3 px-6 rounded-full font-semibold uppercase tracking-wide shadow-button;
   transform: translateY(0);
   transition: all 0.3s ease;
 }
@@ -64,12 +84,12 @@ a:hover {
 }
 
 .btn-secondary {
-  @apply bg-transparent border border-primaryBrand text-primaryBrand py-3 px-6 rounded-button font-semibold uppercase tracking-button;
+  @apply bg-transparent border border-primaryBrand text-primaryBrand py-3 px-6 rounded-full font-semibold uppercase tracking-wide;
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  @apply bg-primaryBrand text-textDark;
+  @apply bg-primaryBrand text-textPrimary;
 }
 
 /* Navigation Styles */
@@ -78,7 +98,7 @@ a:hover {
 }
 
 .nav-link {
-  @apply text-textDark font-medium transition-all duration-300;
+  @apply text-textPrimary font-medium transition-all duration-300;
 }
 
 .nav-link:hover {
@@ -91,7 +111,7 @@ a:hover {
 
 /* Card Styles */
 .service-card {
-  @apply bg-white rounded-standard shadow-card p-6 transition-all duration-300;
+  @apply bg-white rounded shadow-card p-6 transition-all duration-300;
 }
 
 .service-card:hover {
@@ -100,24 +120,24 @@ a:hover {
 }
 
 .testimonial-card {
-  @apply bg-white rounded-standard shadow-card p-6 relative;
+  @apply bg-white rounded shadow-card p-6 relative;
 }
 
 .testimonial-quote {
-  @apply text-base italic text-textLight;
+  @apply text-base italic text-textSecondary;
 }
 
 .testimonial-author {
-  @apply text-lg font-bold text-textLight mt-4;
+  @apply text-lg font-bold text-textSecondary mt-4;
 }
 
 .testimonial-title {
-  @apply text-sm text-textMedium;
+  @apply text-sm text-textSecondary;
 }
 
 /* Form Styles */
 .form-input {
-  @apply bg-white border border-borderPrimary rounded-button py-3 px-4 text-base text-textLight w-full;
+  @apply bg-white border border-borderGlow rounded-full py-3 px-4 text-base text-textSecondary w-full;
 }
 
 .form-input:focus {
@@ -131,11 +151,11 @@ a:hover {
 
 /* Section Styles */
 .section-header {
-  @apply text-section-header font-bold uppercase tracking-section-header text-primaryBrand mb-4;
+  @apply font-bold uppercase text-primaryBrand mb-4 text-[1.1rem] tracking-[0.1em];
 }
 
 .hero-section {
-  @apply relative py-24 text-textDark;
+  @apply relative py-24 text-textPrimary;
 }
 
 .content-section {
@@ -153,11 +173,11 @@ a:hover {
 
 /* Footer Styles */
 .footer {
-  @apply bg-darkBackground text-textDark py-16;
+  @apply bg-darkBackground text-textPrimary py-16;
 }
 
 .footer-link {
-  @apply text-textDark transition-all duration-300;
+  @apply text-textPrimary transition-all duration-300;
 }
 
 .footer-link:hover {
@@ -165,7 +185,7 @@ a:hover {
 }
 
 .social-icon {
-  @apply text-textDark text-2xl transition-all duration-300;
+  @apply text-textPrimary text-2xl transition-all duration-300;
 }
 
 .social-icon:hover {
@@ -200,4 +220,104 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.2);
+  border-color: var(--border-glow);
+}
+
+.cyberpunk-btn {
+  background: linear-gradient(45deg, var(--primary-brand), var(--secondary-accent));
+  color: var(--text-primary);
+  padding: 1.2rem 3rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 30px rgba(0,255,255,0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.cyberpunk-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(0,255,255,0.6);
+}
+
+.cyberpunk-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+.cyberpunk-btn:hover::after {
+  left: 100%;
+}
+
+.text-glow {
+  text-shadow: 0 0 40px rgba(0,255,255,0.5);
+  animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.2); }
+}
+
+@keyframes backgroundShift {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes gridMove {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(50px, 50px); }
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+input, textarea, select {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-glow);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+  backdrop-filter: blur(10px);
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--primary-brand);
+  box-shadow: 0 0 20px var(--border-glow);
 }

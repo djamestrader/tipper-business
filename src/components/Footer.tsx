@@ -72,11 +72,11 @@ const Footer = () => {
           {[{
             date: 'August 5, 2022',
             text: 'Waste to Energy: A Guide to Sustainable Waste',
-            image: '/images/blog-thumb-1.jpg'
+            image: '/types-of-waste/household-junk.jpg'
           }, {
             date: 'August 2, 2022',
             text: 'Avoid Creating Waste Through Upcycling',
-            image: '/images/blog-thumb-2.jpg'
+            image: '/types-of-waste/green-garden-waste.jpg'
           }].map((post, i) => (
             <div key={i} className="flex gap-3 mb-4">
               <Image src={post.image} alt={post.text} width={60} height={60} className="rounded object-cover" />
